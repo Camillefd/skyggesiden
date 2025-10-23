@@ -1,0 +1,394 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/**************** main *******************/
+main {
+  background-color: #283940;
+}
+
+body {
+  background-color: #283940;
+}
+/**************** menu ********************/
+header {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #262626;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  margin-right: 50px;
+}
+
+.menu a {
+  font-family: Catamaran;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: #d7d0bf;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #b30000;
+}
+/************** bruger menu *************/
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #d7d0bf;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+/************** logo ********************/
+.logo {
+  margin-left: 40px;
+  width: 70px;
+  border-radius: 10px;
+}
+
+/*************** overskrifter ***********/
+@media (min-width: 840px) {
+  .top1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 700px;
+  }
+
+  .top img {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+  }
+
+  .omos img {
+    object-fit: cover;
+    object-position: 100% 35%;
+    width: 100%;
+    height: 600px;
+  }
+}
+
+@media (max-width: 840px) {
+  .omos img {
+    object-fit: cover;
+    object-position: 100% 35%;
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/*************** tekst *****************/
+h1 {
+  font-family: Anton SC;
+  font-weight: normal;
+  font-size: 5.5rem;
+  color: #d7d0bf;
+}
+@media (max-width: 840px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-family: Anton SC;
+  font-weight: normal;
+  font-size: 3rem;
+  color: #d7d0bf;
+}
+
+h3 {
+  font-family: Catamaran;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #d7d0bf;
+}
+
+h4 {
+  font-family: Catamaran;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #d7d0bf;
+}
+
+p {
+  font-family: Cantarell;
+  font-weight: normal;
+  font-size: 1rem;
+  color: white;
+  max-width: 68ch;
+  line-height: 1.8rem;
+}
+
+ul {
+  font-family: Cantarell;
+  font-weight: normal;
+  font-size: 1rem;
+  color: white;
+  max-width: 68ch;
+}
+
+/**************** forside *****************/
+.grid_1-1-1 {
+  background-color: #415c68;
+}
+
+.box1 {
+  background-color: #415c68;
+  border-radius: 20px;
+}
+
+.box2 {
+  background-color: #415c68;
+  border-radius: 20px;
+}
+
+.box3 {
+  background-color: #415c68;
+  border-radius: 20px;
+}
+
+@media (max-width: 840px) {
+  .grid_3-5 img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+  }
+  .box1 {
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+  }
+  .box2 {
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+  }
+  .box3 {
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .grid_1-1-1 {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .grid_1-1-1 img {
+    object-fit: cover;
+    width: 200px;
+  }
+  .box4 {
+    margin: 20px;
+  }
+  .box5 {
+    margin: 20px;
+  }
+  .box6 {
+    margin: 20px;
+  }
+
+  .box7 {
+    margin: 20px;
+  }
+
+  .box8 {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 840px) {
+  .grid_3-5 img {
+    object-fit: cover;
+  }
+  .grid_1-1-1 img {
+    object-fit: cover;
+    width: 400px;
+    margin: 50px;
+  }
+  .box1 {
+    padding: 30px;
+  }
+  .grid_1-1-1 {
+    text-align: center;
+  }
+
+  .box7 {
+    margin: 20px;
+    margin-left: 50px;
+  }
+
+  .box8 {
+    margin: 20px;
+    margin-right: 50px;
+  }
+}
+/**************** nyheder *****************/
+section {
+  background-color: #415c68;
+  border-radius: 60px;
+  margin: 50px;
+  padding: 50px;
+}
+
+@media (max-width: 840px) {
+  section {
+    margin: 50px;
+    padding: 30px;
+  }
+
+  section img {
+    object-fit: cover;
+    object-position: 100% 35%;
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
+
+  .news {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 840px) {
+  section img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .news {
+    padding: 30px;
+  }
+
+  .nyheder1 {
+    column-count: 2;
+    padding: 60px;
+    gap: 70px;
+  }
+  .nyheder4 {
+    column-count: 2;
+    padding: 60px;
+    gap: 70px;
+  }
+}
+
+/**************** historier ***************/
+.grid1_1-1 img {
+  background-color: #415c68;
+  padding: 30px;
+}
+
+.grid1_1-1 h3 {
+  padding: 10px;
+  text-align: center;
+}
+
+.grid1_1-1 p {
+  padding: 10px;
+  text-align: center;
+}
+
+/****************** Om os ****************/
+@media (min-width: 840px) {
+  .box9 {
+    column-count: 2;
+    padding: 30px;
+    gap: 70px;
+  }
+}
+
+.box9 {
+  margin: 30px;
+}
+
+.box9 h3 {
+  padding-top: 40px;
+}
+
+.box9 p {
+  padding-top: 10px;
+}
+
+.box9 ul {
+  margin-left: 20px;
+}
+
+.facebook {
+  font-family: Anton SC;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: #95bdc5;
+  border-radius: 50px;
+  width: 500px;
+}
+
+.facebook img {
+  object-fit: cover;
+  width: 100px;
+  height: 100%;
+}
+/**************** footer ******************/
+footer {
+  background-color: #262626;
+  padding: 60px;
+}
+
+footer h3 {
+  font-family: Catamaran;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #d7d0bf;
+  text-align: center;
+}
+
+.ikoner {
+  width: 200px;
+}
+
+.Tilmeld button {
+  font-family: Catamaran;
+  font-weight: bolder;
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #d7d0bf;
+  border: none;
+}
+.Tilmeld {
+  background-color: white;
+  margin: 50px;
+  max-width: 450px;
+  height: 46px;
+  margin: auto;
+  align-items: center;
+}
